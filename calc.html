@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title> Calculadora </title>
+        <style>
+            #resultado{
+                   width: 150px;
+                   height: 25px;
+                   background-color :deepskyblue;
+            }
+        </style>
+    </head>
+    <body>
+       <form>
+         <p>
+            1ª Faixa: <select id="faixa01" id="res" >
+                      <option value="0"> Preto </option>
+                      <option value="1"> Marrom </option>
+                      <option value="2"> Vermelho </option>
+                      <option value="3"> Laranja </option>
+                      <option value="4"> Amarelo </option>
+                      <option value="5"> Verde </option>
+                      <option value="6"> Azul </option>
+                      <option value="7"> Violeta </option>
+                      <option value="8"> Cinza </option>
+                      <option value="9"> Branco </option>
+                      </select>
+         </p>
+         <p>
+            2ª Faixa: <select id="faixa02" id="res2">
+                      <option value="0"> Preto </option>
+                      <option value="1"> Marrom </option>
+                      <option value="2"> Vermelho </option>
+                      <option value="3"> Laranja </option>
+                      <option value="4"> Amarelo </option>
+                      <option value="5"> Verde </option>
+                      <option value="6"> Azul </option>
+                      <option value="7"> Violeta </option>
+                      <option value="8"> Cinza </option>
+                      <option value="9"> Branco </option>
+                      </select>
+         </p>
+         <p>
+            Multiplicador: <select id="multi" id="mul">
+                      <option value="1"> Preto </option>
+                      <option value="10"> Marrom </option>
+                      <option value="100"> Vermelho </option>
+                      <option value="1000"> Laranja </option>
+                      <option value="10000"> Amarelo </option>
+                      <option value="100000"> Verde </option>
+                      <option value="1000000"> Azul </option>
+                      <option value="10000000"> Violeta </option>
+                      </select>
+         </p>
+         <p>
+            Tolerância: <select id="tol" onchange="calRes()">
+                      <option value="10"> Prata</option>
+                      <option value="5"> Dourado </option>
+                      </select>
+         </p>
+       </form>
+       <div id="resultado"> 
+
+         </div>
+         <input type="button" value="calcular" onclick="resistencia()">
+       <script>
+        function calRes(){
+         let faixa01 = document.getElementById("res").value;
+         console.log(faixa01);
+
+        }
+       </script>
+    </body>
+</html>
